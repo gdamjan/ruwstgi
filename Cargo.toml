@@ -8,5 +8,10 @@ futures = "0.3"
 tokio = { version = "1.21.0", features = ["full"] }
 tokio-util = { version = "0.7", features = ["compat"] }
 hyper = { version = "0.14.0", features = ["stream", "tcp", "server", "http1"] }
-hyper_cgi = { version = "22.10.25", path = "../../src/josh/hyper_cgi" }
-phper-sys = { version = "0.5.1", path = "../../src/phper/phper-sys" }
+hyper_cgi = "22.4.15"
+phper-sys = "0.5.1"
+
+## moved to a local uncommited .cargo/config.toml
+#[patch.crates-io]
+#phper-sys = { path = "../../src/phper/phper-sys" }
+#hyper_cgi = { path = "../../src/josh/hyper_cgi" }
