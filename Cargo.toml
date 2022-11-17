@@ -1,0 +1,12 @@
+[package]
+name = "ruwstgi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "0.3"
+tokio = { version = "1.21.0", features = ["full"] }
+tokio-util = { version = "0.7", features = ["compat"] }
+hyper = { version = "0.14.0", features = ["stream", "tcp", "server", "http1"] }
+hyper_cgi = { version = "22.10.25", path = "../../src/josh/hyper_cgi" }
+phper-sys = { version = "0.5.1", path = "../../src/phper/phper-sys" }
